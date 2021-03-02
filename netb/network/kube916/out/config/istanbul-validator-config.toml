@@ -1,0 +1,5 @@
+vanity = "0x00"
+validators = [
+"0x228dB95f0f2be002fea420829e9502D8E3B76d6E",
+"0x99F1E0B789a9dF9F4632DA27FbfEe2b7B63c3123",
+]

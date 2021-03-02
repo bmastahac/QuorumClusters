@@ -1,0 +1,107 @@
+{
+  "network": {
+    "name": "kube916",
+    "verbosity": 5,
+    "consensus": "istanbul",
+    "quorumVersion": "20.10.0",
+    "transactionManager": "20.10.0",
+    "permissioned": true,
+    "genesisFile": "none",
+    "generateKeys": true,
+    "configDir": "network/kube916/resources",
+    "deployment": "kubernetes",
+    "cakeshop": "none",
+    "splunk": false,
+    "prometheus": false,
+    "reporting": false,
+    "reportingRpcPort": "4000",
+    "reportingUiPort": "3000",
+    "networkId": "916",
+    "customizePorts": false,
+    "cakeshopPort": "30108",
+    "remoteDebug": false,
+    "splunkIp": "127.0.0.1",
+    "splunkPort": "8000",
+    "splunkHecPort": "8088"
+  },
+  "nodes": [
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21000,
+        "rpcPort": 22000,
+        "wsPort": 23000,
+        "raftPort": 50401,
+        "graphQlPort": 24000
+      },
+      "tm": {
+        "ip": "127.0.0.1",
+        "thirdPartyPort": 9081,
+        "p2pPort": 9001
+      }
+    },
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21001,
+        "rpcPort": 22001,
+        "wsPort": 23001,
+        "raftPort": 50402,
+        "graphQlPort": 24001
+      },
+      "tm": {
+        "ip": "127.0.0.1",
+        "thirdPartyPort": 9082,
+        "p2pPort": 9002
+      }
+    },
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21002,
+        "rpcPort": 22002,
+        "wsPort": 23002,
+        "raftPort": 50403,
+        "graphQlPort": 24002
+      },
+      "tm": {
+        "ip": "127.0.0.1",
+        "thirdPartyPort": 9083,
+        "p2pPort": 9003
+      }
+    },
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21003,
+        "rpcPort": 22003,
+        "wsPort": 23003,
+        "raftPort": 50404,
+        "graphQlPort": 24003
+      },
+      "tm": {
+        "ip": "127.0.0.1",
+        "thirdPartyPort": 9084,
+        "p2pPort": 9004
+      }
+    }
+  ],
+  "containerPorts": {
+    "dockerSubnet": "",
+    "quorum": {
+      "rpcPort": 8545,
+      "p2pPort": 30303,
+      "raftPort": 50401,
+      "wsPort": 8546,
+      "graphQlPort": 8547
+    },
+    "tm": {
+      "p2pPort": 9001,
+      "thirdPartyPort": 9080
+    },
+    "reporting": {
+      "rpcPort": 4000,
+      "uiPort": 3000
+    }
+  }
+}
